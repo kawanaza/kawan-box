@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+   background-color: oldlace;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+h1{
+    position:absolute;
+text-align: center;
+width: 300px;
+
+line-height: 300px;
+   font-size: 3rem;
+}
+.container{
+
+   position: relative;
+   width: 300px;
+   height: 300px;
+
+}
+
+
+
+
+.box1{
+    width: 150px;
+    height: 150px;
+    background-color: red;
+    position: absolute;
+ 
+    animation-name: rotBox;
+    animation-duration: 4s;
+ 
+ 
+  }
+  
+  @keyframes rotBox {
+
+    to {transform: translate(-150px) 
+        rotate(90deg)  } 
+  }
+
+
+.box2{
+    width: 150px;
+    height: 150px;
+    
+    background-color: rgb(27, 40, 214);
+    position: absolute;
+   right:0;
+    animation-name: blueBox;
+    animation-duration: 4s;
+    
+  }
+  
+  @keyframes blueBox {
+    to {transform: translate(150px) 
+        rotate(90deg)  } 
+  }
+
+
+.box3{
+    width: 150px;
+    height: 150px;
+   
+bottom: 0;
+    background-color: rgb(240, 209, 38);
+    position: absolute;
+
+    animation-name: YalloBox ;
+    animation-duration: 4s;
+     
+  }
+  
+  @keyframes YalloBox {
+    to {transform: translate(-150px) 
+        rotate(90deg)  } 
+
+  }
+
+.box4{
+    width: 150px;
+    height: 150px;
+ bottom: 0;
+ right: 0;
+    background-color: rgb(16, 173, 11);
+    position: absolute;
+    animation-name: BrownBox ;
+    animation-duration: 4s;
+     
+  }
+  
+  @keyframes BrownBox {
+    to {transform: translate(150px) 
+        rotate(90deg)  } ; 
+       
+  }
+ 
